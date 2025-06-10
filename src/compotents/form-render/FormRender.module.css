@@ -1,0 +1,95 @@
+.wrapper {
+    padding: 24px;
+    color: var(--color-text);
+    font-family: 'Barlow', sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.title {
+    align-self: flex-end;
+    font-size: 20px;
+    color: var(--color-accent);
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+
+.description {
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 16px;
+    line-height: 1.4;
+    color: var(--color-accent);
+}
+
+.field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.field input,
+.field textarea {
+    all: unset;
+    width: 60%;
+    padding: 10px 15px;
+    border: 1px solid var(--color-accent-border);
+    background-color: transparent;
+    color: var(--color-accent);
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: var(--color-accent);
+    opacity: 0.3;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: var(--color-accent) !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+    color: var(--color-accent) !important;
+}
+
+.error {
+    align-self: flex-start;
+    color: #ff6680;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.button:disabled {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.button:not(:disabled) {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+}

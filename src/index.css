@@ -1,0 +1,17 @@
+:root {
+  --color-bg: #0A1C33;
+  --color-accent: #85D3F2;
+  --color-error: #DF6A7C;
+
+  --color-accent-border: rgba(133, 211, 242, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 5px;
+  font-weight: 300;
+  background-color: var(--color-bg);
+  color: var(--color-accent);
+}
